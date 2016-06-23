@@ -4,4 +4,5 @@
 ## How to use it
 
 > bundle install
+
 > bundle exec jekyll serve -w
