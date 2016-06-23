@@ -1,0 +1,41 @@
+<div class="container-fluid container">
+<div class="row ">
+  <div class="col-xs-8  col-md-8 header_box">
+
+    <p class="animated bounce ">
+    
+    {{page.one_sentence}}
+    </p>
+
+
+
+  </div>
+  <div class="col-xs-4 col-md-4 header_box"> 
+
+    
+    <div class="sticker example-1 vcenter  sticker-img" ></div>
+
+
+
+
+  </div>
+
+
+</div>
+<style>
+
+.example-1 .sticker-img {
+            background-image: url(/image/{{page.header_image}});
+
+
+
+}
+</style>
+<script type="text/javascript" src="/js/sticker.js"></script>
+<script>
+
+Sticker.init('.sticker');
+
+</script>
+
+</div>
