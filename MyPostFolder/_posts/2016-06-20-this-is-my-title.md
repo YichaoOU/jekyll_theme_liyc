@@ -324,11 +324,6 @@ This is some text not written in HTML but in another language!
 --- will become an em-dash (like this —)
 
 
-{% highlight ruby %}
-def foo
-  puts 'foo'
-end
-{% endhighlight %}
 
 
 [linkid]: http://www.example.com/ "Optional Title"

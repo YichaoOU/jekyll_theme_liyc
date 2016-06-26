@@ -5,7 +5,7 @@
 	<head>
 		<meta charset='utf-8'>
 		<meta name='viewport' content='width=device-width,initial-scale=1.0'>
-		<title>双打比赛，中间球，谁来接？</title>
+		<title>一些常用的markdown语言</title>
 		
 		<link rel="stylesheet" type="text/css" href="/css/bootstrap.css">
 		<link rel="stylesheet" type="text/css" href="/css/liyc.css">
@@ -108,7 +108,7 @@
 
     <p class="animated bounce ">
     
-    谁挑斜线球，谁接中间球。谁挑直线球，谁不接中间球。
+    这里，用一句话总结
     </p>
 
 
@@ -165,35 +165,93 @@ Sticker.init('.sticker');
 				
  -->				
 
-				<h1>双打比赛，中间球，谁来接？</h1>
+				<h1>一些常用的markdown语言</h1>
 <!-- <p class="meta">20 Jun 2016</p> -->
 
 <div class="post">
-  <blockquote>
-  <p>双打比赛中，如果球员之间配合不默契，则会有1+1&lt;2的情况。
-其中，最常见的问题就是，中间球到底由谁来接？</p>
+  <hr />
+
+<h1 id="a1">这是一级标题</h1>
+
+<h2 id="section">这是二级标题</h2>
+
+<h3 id="section-1">这是三级标题</h3>
+
+<h1 id="reference">这样写Reference：</h1>
+
+<p>TCA循环是生物体很重要的一个代谢过程<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup></p>
+
+<p>这是一个  <code class="highlighter-rouge">红色的高亮</code></p>
+
+<h2 id="section-2">这是一个  大字号的  `红色的高亮</h2>
+
+<p>下面是blockquote</p>
+
+<blockquote>
+  <p>好好学习，天天向上</p>
+
+  <p>黄河之水天上来，奔流到海不复还</p>
 </blockquote>
 
-<p>这个问题并没有确切答案，因为这样根据谁防守能力更强和当时比赛的情况而定。网上有很多文章讨论中间球，但写的都比较繁琐难理解。末将应用奥卡姆剃刀，梳理了一下，得出了一个比较好记的口诀：</p>
+<p>注意，markdown在书写时，加了特效的地方都要单独成行。
+比如下面的例子，他们是连续的三行，则其output是：</p>
 
-<div class="alert alert-danger" role="alert">谁挑斜线球，谁接中间球</div>
+<h1 id="section-3">这是一级标题</h1>
+<p>## 这是二级标题
+### 这是三级标题</p>
 
-<div class="alert alert-danger" role="alert">谁挑直线球，谁不接中间球</div>
+<p><kbd>有底色的文字</kbd></p>
 
-<p><img src="/image/occams.jpg" alt="occams" /></p>
+<p>我喜欢<span class="label label-primary">BootStrap</span></p>
 
-<p>第一个，谁挑斜线球，谁接中间球。道理是什么？</p>
+<p>下面是代码高亮：</p>
 
-<p><img src="/image/double_midcourt1.png" alt="occams" /></p>
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">show</span>
+  <span class="nb">puts</span> <span class="s2">"Outputting a very lo-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-ong lo-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-ong line"</span>
+  <span class="vi">@widget</span> <span class="o">=</span> <span class="no">Widget</span><span class="p">(</span><span class="n">params</span><span class="p">[</span><span class="ss">:id</span><span class="p">])</span>
+  <span class="n">respond_to</span> <span class="k">do</span> <span class="o">|</span><span class="nb">format</span><span class="o">|</span>
+    <span class="nb">format</span><span class="p">.</span><span class="nf">html</span> <span class="c1"># show.html.erb</span>
+    <span class="nb">format</span><span class="p">.</span><span class="nf">json</span> <span class="p">{</span> <span class="n">render</span> <span class="ss">json: </span><span class="vi">@widget</span> <span class="p">}</span>
+  <span class="k">end</span>
+<span class="k">end</span></code></pre></figure>
 
-<p>如上图，A挑斜线，对手有5种杀球的方向，其中红色的是杀直线，蓝色就是杀斜线。大家都知道，杀直线速度快，此时B的防守压力比较大，A应该分担一部分，所以中间球由A来接。这就是，谁挑斜线球，谁接中间球。</p>
+<p>这样来添加图片：</p>
 
-<p>第二个，谁挑直线球，谁不接中间球。道理是什么？</p>
+<p><img src="/image/Desert.jpg" alt="anything" /></p>
 
-<p><img src="/image/double_midcourt2.png" alt="occams" /></p>
+<p>这样来添加链接，你知道什么是<a href="https://zh.wikipedia.org/wiki/%E5%85%89%E5%90%88%E4%BD%9C%E7%94%A8">光合作用</a>么？</p>
 
-<p>如上图，A挑直线，对手有5种杀球的方向，其中红色的是杀直线，蓝色就是杀斜线。大家都知道，杀直线速度快，此时A的防守压力比较大，B应该分担一部分，所以中间球由B来接。这就是，谁挑直线球，谁不接中间球。</p>
+<p><em>Italic</em></p>
 
+<p><strong>Bold</strong></p>
+
+<p><strong><em>Bold and Italic</em></strong></p>
+
+<p>这样写一个list:</p>
+
+<ul>
+  <li>first</li>
+  <li>second</li>
+  <li>third</li>
+</ul>
+
+<p>这样来写数学公式:</p>
+
+<script type="math/tex; mode=display">\sum_{a=0}^{a=N} a+1</script>
+
+<p>设置锚定：</p>
+
+<p><a href="#a1">返回顶部</a></p>
+
+<hr />
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:1">
+      <p>给出你的reference <a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
 
 </div>
 				 
